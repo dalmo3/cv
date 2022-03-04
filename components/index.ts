@@ -1,4 +1,5 @@
 export * from './Additional';
+export * from './Download';
 export * from './Education';
 export * from './Footer';
 export * from './H2';

@@ -1,11 +1,12 @@
 import {
-  Footer,
-  SkillList,
-  WorkHistory,
   Additional,
+  Download,
   Education,
+  Footer,
   Info,
+  SkillList,
   Summary,
+  WorkHistory,
 } from 'components';
 import { professionalSkills, technicalSkills, workHistory } from 'data';
 import type { NextPage } from 'next';
@@ -19,17 +20,20 @@ const CV: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className="absolute inset-0 px-2 w-full h-fit min-h-screen bg-neutral-300 sm:px-4 md:px-6 lg:px-10">
-      <main className="relative py-20 px-8 my-40  mx-auto max-w-5xl bg-white rounded drop-shadow-md sm:px-10 md:px-12 lg:px-16">
-        <div className="grid gap-y-10">
-          <Info />
-          <Summary />
-          <SkillList {...technicalSkills} />
-          <SkillList {...professionalSkills} />
-          <WorkHistory {...{ workHistory }} />
-          <Education />
-          <Additional />
-        </div>
-      </main>
+      <div className="my-40 mx-auto">
+        <Download />
+        <main className="relative py-20 px-8 max-w-5xl bg-white rounded drop-shadow-md sm:px-10 md:px-12 lg:px-16">
+          <div className="grid gap-y-10">
+            <Info />
+            <Summary />
+            <SkillList {...technicalSkills} />
+            <SkillList {...professionalSkills} />
+            <WorkHistory {...{ workHistory }} />
+            <Education />
+            <Additional />
+          </div>
+        </main>
+      </div>
       <Footer />
     </div>
   </>
