@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { FC, VFC } from 'react';
 import clsx from 'clsx';
 
-const Home: NextPage = () => (
+const CV: NextPage = () => (
   <>
     <Head>
       <title>Dalmo Mendonça | Web Developer</title>
@@ -11,14 +11,17 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className="absolute inset-0 px-2 w-full h-fit min-h-screen bg-neutral-300 sm:px-4 md:px-6 lg:px-10">
-      <main className="relative px-8 pt-20 pb-10 my-40  mx-auto max-w-5xl bg-white rounded drop-shadow-md sm:px-10 md:px-12 lg:px-16">
+      <main className="relative py-20 px-8 my-40  mx-auto max-w-5xl bg-white rounded drop-shadow-md sm:px-10 md:px-12 lg:px-16">
         <div className="grid gap-y-10">
+          {/* Header */}
           <header className="w-full text-center">
             <h1 className="text-2xl font-bold uppercase">Dalmo Mendonça</h1>
             <p>+64 21 067 3815 – hire@dalmo.dev</p>
             <p>Wellington, NZ – Permanent Resident</p>
             <p>linkedin.com.in/dalmo3 – github.com/dalmo3</p>
           </header>
+
+          {/* Summary */}
           <div>
             <H2>Summary</H2>
             <p>
@@ -28,9 +31,56 @@ const Home: NextPage = () => (
               developing the most diverse software projects.
             </p>
           </div>
+
           <SkillList {...technicalSkills} />
           <SkillList {...professionalSkills} />
           <WorkHistory {...{ workHistory }} />
+
+          {/* Education */}
+          <div>
+            <H2>Education</H2>
+            <div className="flex gap-x-4 justify-between pt-1">
+              <h3 className="font-bold uppercase">
+                Bachelor of Engineering (Computer Engineering)
+              </h3>
+              <span className="font-semibold whitespace-nowrap">
+                2006 – 2011
+              </span>
+            </div>
+            <h4 className="font-semibold">Major in Industrial Automation</h4>
+            <p>
+              Federal University of Rio Grande do Norte (UFRN) – Natal, Brazil
+            </p>
+            <br />
+            <div className="flex gap-x-4 justify-between pt-1">
+              <h4 className="font-semibold">
+                Computer Engineering Exchange Student Scholarship
+              </h4>
+              <span className="font-semibold whitespace-nowrap">
+                2009 – 2010
+              </span>
+            </div>
+            <p>McMaster University – Hamilton, Canada</p>
+          </div>
+
+          {/* Info */}
+          <div>
+            <H2>Additional Info</H2>
+            <div>
+              <h3 className="inline font-semibold">Programming Languages</h3>
+              <p className="inline">
+                {' – '}C, C#, C++, Java, ML, OCaml, JavaScript, TypeScript,
+                Verilog
+              </p>
+            </div>
+            <div>
+              <h3 className="inline font-semibold">Spoken Languages</h3>
+              <p className="inline">
+                {' – '}English (Fluent), Portuguese (Native), Spanish
+                (Intermediate)
+              </p>
+            </div>
+          </div>
         </div>
       </main>
       <footer className="text-sm text-center text-neutral-600">
@@ -48,7 +98,7 @@ const Home: NextPage = () => (
   </>
 );
 
-export default Home;
+export default CV;
 
 type H2 = { noBorder?: boolean };
 const H2: FC<H2> = ({ noBorder, children }) => (
@@ -95,7 +145,7 @@ const professionalSkills: SkillList = {
   ],
 };
 
-type WorkSkill = { title: string; description: string };
+type WorkHistory = { workHistory: WorkExperience[] };
 type WorkExperience = {
   title: string;
   period: string;
@@ -105,6 +155,18 @@ type WorkExperience = {
   role: string;
   skills: WorkSkill[];
 };
+type WorkSkill = { title: string; description: string };
+
+const WorkHistory: VFC<WorkHistory> = ({ workHistory }) => (
+  <div>
+    <H2 noBorder>Work Experience</H2>
+    <div className="grid gap-y-10">
+      {workHistory.map((work) => (
+        <WorkExperience {...work} key={work.company} />
+      ))}
+    </div>
+  </div>
+);
 
 const WorkExperience: FC<WorkExperience> = ({
   title,
@@ -116,47 +178,36 @@ const WorkExperience: FC<WorkExperience> = ({
   skills,
 }) => (
   <div>
-    <div className="flex gap-x-4 justify-between border-t">
-      <h3 className="mt-1 font-bold uppercase">{title}</h3>
-      <span className="whitespace-nowrap">{period}</span>
+    <div className="flex gap-x-4 justify-between pt-1 border-t">
+      <h3 className="font-bold uppercase">{title}</h3>
+      <span className="font-semibold whitespace-nowrap">{period}</span>
     </div>
     <p>
-      <span className="uppercase">{company}</span>, {location} {' – '}
+      <span className="uppercase">{company}</span>
+      {`, ${location} – `}
       <i>{about}</i>
     </p>
-    <p>
-      <strong>Role: </strong>
-      {role}
-    </p>
-    <br />
+    <div>
+      <h4 className="inline font-semibold">Role: </h4>
+      <p className="inline">{role}</p>
+    </div>
     {!!skills.length && (
       <>
-        <p>
-          <strong>Demonstrated Skills:</strong>
-        </p>
+        <br />
+        <h4 className="font-semibold">Demonstrated Skills:</h4>
         <ul className="list-disc list-inside">
           {skills.map(({ title, description }) => (
             <li key={title}>
-              <strong> {title}</strong>
-              {' – '}
-              {description}
+              <h5 className="inline font-semibold"> {title}</h5>
+              <p className="inline">
+                {' – '}
+                {description}
+              </p>
             </li>
           ))}
         </ul>
       </>
     )}
-  </div>
-);
-
-type WorkHistory = { workHistory: WorkExperience[] };
-const WorkHistory: VFC<WorkHistory> = ({ workHistory }) => (
-  <div>
-    <H2 noBorder>Work Experience</H2>
-    <div className="grid gap-y-10">
-      {workHistory.map((work) => (
-        <WorkExperience {...work} key={work.company} />
-      ))}
-    </div>
   </div>
 );
 
