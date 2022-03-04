@@ -5,3 +5,7 @@ My CV was built with
 - Typescript
 - TailwindCSS
 - ESlint
+
+Like it? Contact me at the email at the top of the CV :)
+
+Download it [here](https://github.com/dalmo3/cv/raw/main/public/Dalmo-Mendonca-CV-latest.pdf).
