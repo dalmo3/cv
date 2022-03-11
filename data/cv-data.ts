@@ -93,7 +93,7 @@ export const workHistory: WorkExperience[] = [
     ],
   },
   {
-    title: 'Automation Engineer',
+    title: 'Industrial Automation Engineer',
     period: '2011 – 2017',
     company: 'Petrobras',
     location: 'Brazil',

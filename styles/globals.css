@@ -10,3 +10,9 @@
     column-count: 2;
   }
 }
+
+@layer components {
+  a {
+    @apply hover:underline decoration-transparent hover:decoration-current decoration-2 underline-offset-2 duration-200 hover:ease-in;
+  }
+}

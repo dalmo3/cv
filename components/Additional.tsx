@@ -16,5 +16,9 @@ export const Additional: VFC = () => (
         {' – '}English (Fluent), Portuguese (Native), Spanish (Intermediate)
       </p>
     </div>
+    <div>
+      <h3 className="inline font-semibold">Visa Status</h3>
+      <p className="inline">{' – '}Permanent Resident</p>
+    </div>
   </div>
 );
