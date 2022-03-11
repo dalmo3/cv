@@ -29,7 +29,7 @@ export const professionalSkills: SkillList = {
 export const workHistory: WorkExperience[] = [
   {
     title: 'Frontend Developer',
-    period: '2020 - Present',
+    period: '2020 – Present',
     company: 'while and for',
     location: 'Auckland',
     about: 'Design and development of software solutions.',
@@ -69,7 +69,7 @@ export const workHistory: WorkExperience[] = [
   },
   {
     title: 'Web Developer',
-    period: '2018-2020',
+    period: '2018 – 2020',
     company: 'Virtua',
     location: 'Wellington',
     about: 'Website and App development for small businesses.',
@@ -78,7 +78,7 @@ export const workHistory: WorkExperience[] = [
       {
         title: 'Deliver Value',
         description:
-          'Understanding the client’s desires, and using my expertise to give them the solutions they need.',
+          "Understanding the client's desires, and using my expertise to give them the solutions they need.",
       },
       {
         title: 'Client Touch',
@@ -94,11 +94,11 @@ export const workHistory: WorkExperience[] = [
   },
   {
     title: 'Automation Engineer',
-    period: '2011 - 2017',
+    period: '2011 – 2017',
     company: 'Petrobras',
     location: 'Brazil',
     about:
-      'Brazil’s biggest company with over 50k employees is also one of the world’s top 10 Oil companies.',
+      "Brazil's biggest company with over 50k employees is also one of the world's top 10 Oil companies.",
     role: 'Developed Instrumentation and Automation projects for over 30 offshore oil platforms.',
     skills: [
       {
