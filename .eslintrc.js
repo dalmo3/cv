@@ -9,7 +9,6 @@ module.exports = {
     'plugin:import/recommended',
     'prettier',
     'plugin:@next/next/recommended',
-    'next/core-web-vitals',
   ],
   rules: {
     // start pair

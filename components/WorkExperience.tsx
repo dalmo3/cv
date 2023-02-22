@@ -22,9 +22,9 @@ export const WorkExperience: VFC<WorkExperience> = ({
   skills,
 }) => (
   <div>
-    <div className="flex gap-x-4 justify-between pt-1 border-t">
+    <div className="flex justify-between gap-x-4 border-t pt-1">
       <h3 className="font-bold uppercase">{title}</h3>
-      <span className="font-semibold whitespace-nowrap">{period}</span>
+      <span className="whitespace-nowrap font-semibold">{period}</span>
     </div>
     <p>
       <span className="uppercase">{company}</span>
@@ -39,7 +39,7 @@ export const WorkExperience: VFC<WorkExperience> = ({
       <>
         <br />
         <h4 className="font-semibold">Demonstrated Skills:</h4>
-        <ul className="list-disc list-inside">
+        <ul className="list-inside list-disc">
           {skills.map(({ title, description }) => (
             <li key={title}>
               <h5 className="inline font-semibold"> {title}</h5>

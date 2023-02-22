@@ -1,5 +1,5 @@
-import { H2 } from 'components';
 import { VFC } from 'react';
+import { H2 } from 'components';
 
 export const Summary: VFC = () => (
   <div>

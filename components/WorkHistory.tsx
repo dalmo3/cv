@@ -1,5 +1,5 @@
-import { H2, WorkExperience } from 'components';
 import { VFC } from 'react';
+import { H2, WorkExperience } from 'components';
 
 type WorkHistory = { workHistory: WorkExperience[] };
 

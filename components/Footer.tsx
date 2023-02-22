@@ -1,7 +1,7 @@
 import { VFC } from 'react';
 
 export const Footer: VFC = () => (
-  <footer className="text-sm text-center text-neutral-600">
+  <footer className="text-center text-sm text-neutral-600">
     <p>Built with TailwindCSS 🙂</p>
     <a
       className="underline"
