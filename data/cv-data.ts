@@ -5,50 +5,75 @@ export const technicalSkills: SkillList = {
   skills: [
     'React & Next.js',
     'TypeScript & JavaScript',
-    'Node.js, GraphQL, REST APIs',
-    'HTML5, CSS3, SASS, CSS-in-JS',
+    'Node.js, REST APIs, GraphQL',
+    'HTML5, CSS3, Tailwind, CSS-in-JS',
     'SQL, NoSQL, Postgres',
-    'AWS Lambda, Serverless',
+    'AWS Serverless, Azure DevOps',
     'Git goodness',
-    'Jest, Cypress, Storybook',
+    'Jest, Playwright, Storybook',
   ],
 };
 
 export const professionalSkills: SkillList = {
   title: 'Professional Skills',
   skills: [
+    'Tech leadership and decision-making',
     'Self-management in remote work',
     'Autodidacticism & knowledge management',
-    'Great teamwork and communication',
     'Genius problem-solving abilities',
     'Delivers above and beyond the spec',
-    'Excellent technical writing',
+    'Great communication among tech and non-tech people',
   ],
 };
 
 export const workHistory: WorkExperience[] = [
   {
+    title: 'Senior Web Developer',
+    period: '2022 – Present',
+    company: 'The Co-operative Bank',
+    location: 'Wellington',
+    about: 'Everyday personal banking serving 175k+ customers.',
+    role: 'Building an awesome Internet Banking experience for tens of thousands of daily users.',
+    skills: [
+      {
+        title: 'Software Architecture',
+        description:
+          'Leading the rebuild of the new React Internet Banking platform from first principles.',
+      },
+      {
+        title: 'Testing, Testing, Testing',
+        description:
+          'Unit testing with Jest; UI testing with Storybook; End-to-end testing with Playwright.',
+      },
+      {
+        title: 'DevOps',
+        description:
+          'Writing and maintaining build and deployment pipelines in Azure DevOps and Octopus Deploy.',
+      },
+      {
+        title: 'Force multiplying',
+        description:
+          'Commonly enabling coworkers to accelerare the output of the entire team.',
+      },
+      {
+        title: 'Agile Teamwork',
+        description:
+          'Jira for squad task management and Confluence for knowledge management.',
+      },
+    ],
+  },
+  {
     title: 'Frontend Developer',
-    period: '2020 – Present',
+    period: '2020 – 2022',
     company: 'while and for',
     location: 'Auckland',
     about: 'Design and development of software solutions.',
     role: 'Engineering web applications from the ground up. Providing maintenance and developing new features.',
     skills: [
       {
-        title: 'Pixel-perfect',
-        description:
-          'Built modern, responsive and accessible UI from mock designs. TailwindCSS, Material-UI and more.',
-      },
-      {
         title: 'Frontend Engineering',
         description:
           'Built delightful UX in React; Designed complex app architecture and routing with Next.js.',
-      },
-      {
-        title: 'Code Quality',
-        description:
-          'Improved the codebase quality by pushing for the adoption of Typescript and ESLint.',
       },
       {
         title: 'Full Stack Engineering',
@@ -56,14 +81,19 @@ export const workHistory: WorkExperience[] = [
           'AWS Lambda; Database design with PostgreSQL and Hasura; Integration with 3rd-party services.',
       },
       {
-        title: 'Automation Testing',
+        title: 'Pixel-perfect',
         description:
-          'Unit testing with Jest; UI testing with Storybook; End-to-end testing with Cypress.',
+          'Built modern, responsive and accessible UI from mock designs. TailwindCSS, Material-UI and more.',
       },
       {
-        title: 'Agile Remote Work',
+        title: 'Code Quality',
         description:
-          'As a remote-first company, communication efficiency and task management are key.',
+          'Improved the codebase quality by pushing for the adoption of Typescript and ESLint.',
+      },
+      {
+        title: 'Remote Work',
+        description:
+          'As a remote-first company, communication efficiency and self management are key.',
       },
     ],
   },
