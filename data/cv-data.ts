@@ -38,7 +38,12 @@ export const workHistory: WorkExperience[] = [
       {
         title: 'Software Architecture',
         description:
-          'Leading the rebuild of the new React Internet Banking platform from first principles.',
+          'Leading the rebuild of the Internet Banking platform in React from first principles.',
+      },
+      {
+        title: 'Frontend Engineering',
+        description:
+          'Building reusable component frameworks to accelerate the development of new features.',
       },
       {
         title: 'Testing, Testing, Testing',
@@ -48,17 +53,17 @@ export const workHistory: WorkExperience[] = [
       {
         title: 'DevOps',
         description:
-          'Writing and maintaining build and deployment pipelines in Azure DevOps and Octopus Deploy.',
+          'Writing and maintaining CI/CD pipelines in Azure DevOps and Octopus Deploy.',
       },
       {
         title: 'Force multiplying',
         description:
-          'Commonly enabling coworkers to accelerare the output of the entire team.',
+          'Routinely enabling coworkers to accelerare the output of the entire team.',
       },
       {
-        title: 'Agile Teamwork',
+        title: 'Teamwork',
         description:
-          'Jira for squad task management and Confluence for knowledge management.',
+          'Skilled in agile methodologies and tools. Recruiting and interviewing.',
       },
     ],
   },
@@ -83,7 +88,7 @@ export const workHistory: WorkExperience[] = [
       {
         title: 'Pixel-perfect',
         description:
-          'Built modern, responsive and accessible UI from mock designs. TailwindCSS, Material-UI and more.',
+          'Built modern, responsive and accessible UI from mock designs. TailwindCSS, styled-components and more.',
       },
       {
         title: 'Code Quality',

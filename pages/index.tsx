@@ -15,7 +15,7 @@ import { professionalSkills, technicalSkills, workHistory } from 'data';
 const CV: NextPage = () => (
   <>
     <Head>
-      <title>Dalmo Mendonça | Web Developer</title>
+      <title>Dalmo Mendonça | Senior Web Developer</title>
       <meta name="description" content="Hire Me :)" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
