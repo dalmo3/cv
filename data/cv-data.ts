@@ -10,7 +10,7 @@ export const technicalSkills: SkillList = {
     'SQL, NoSQL, Postgres',
     'AWS Serverless, Azure DevOps',
     'Git goodness',
-    'Jest, Playwright, Storybook',
+    'Jest, Playwright, Cypress, Storybook',
   ],
 };
 
@@ -93,7 +93,7 @@ export const workHistory: WorkExperience[] = [
       {
         title: 'Code Quality',
         description:
-          'Improved the codebase quality by pushing for the adoption of Typescript and ESLint.',
+          'Improved the codebase by pushing for the adoption of Typescript and Cypress.',
       },
       {
         title: 'Remote Work',
