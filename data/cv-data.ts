@@ -5,8 +5,8 @@ export const technicalSkills: SkillList = {
   skills: [
     'Frontend - React & Typescript',
     'HTML5, CSS3, Javascript, Tailwind, CSS-in-JS',
-    'Git and Github',
     'Jest, Playwright, Cypress, Storybook',
+    'Git, Github, Azure',
     'Backend - .NET and Springbook/Kotlin',
     'Node.js, REST APIs, GraphQL',
     'SQL, NoSQL, Postgres',
