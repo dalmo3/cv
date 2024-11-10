@@ -9,6 +9,10 @@
   .column-2 {
     column-count: 2;
   }
+
+  .print-break-before {
+    @apply break-before-page print:mt-16;
+  }
 }
 
 @layer components {
