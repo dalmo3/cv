@@ -19,8 +19,7 @@ export const Additional: VFC = () => (
 const additional = [
   {
     title: 'Programming Languages',
-    description:
-      'C, C#, C++, Java, SML, OCaml, JavaScript, TypeScript, Verilog',
+    description: 'C, C#, Kotlin, Java, OCaml, JavaScript, TypeScript',
   },
   {
     title: 'Spoken Languages',

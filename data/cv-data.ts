@@ -3,14 +3,14 @@ import { SkillList, WorkExperience } from 'components';
 export const technicalSkills: SkillList = {
   title: 'Technical Skills',
   skills: [
-    'React & Next.js',
-    'TypeScript & JavaScript',
-    'Node.js, REST APIs, GraphQL',
-    'HTML5, CSS3, Tailwind, CSS-in-JS',
-    'SQL, NoSQL, Postgres',
-    'AWS Serverless, Azure DevOps',
-    'Git goodness',
+    'Frontend - React & Typescript',
+    'HTML5, CSS3, Javascript, Tailwind, CSS-in-JS',
+    'Git and Github',
     'Jest, Playwright, Storybook',
+    'Backend - .NET and Springbook/Kotlin',
+    'Node.js, REST APIs, GraphQL',
+    'SQL, NoSQL, Postgres',
+    'DevOps - AWS, Azure, Github, New Relic',
   ],
 };
 
@@ -28,8 +28,54 @@ export const professionalSkills: SkillList = {
 
 export const workHistory: WorkExperience[] = [
   {
+    title: 'Senior Fullstack Developer',
+    period: '2023 - Present',
+    company: 'Toitū Te Whenua LINZ',
+    location: 'Wellington',
+    about:
+      'New Zealand authority for geographical information, surveying and land titles.',
+    role: 'Building the new and shiny Landonline platform in React for modernising land title transactions.',
+    skills: [
+      {
+        title: 'Frontend Engineering',
+        description:
+          'Building reusable React component frameworks for multiple internal squads.',
+      },
+      {
+        title: 'UX Mastery',
+        description:
+          'Working closely with design and business to greatly improve the user experience.',
+      },
+      {
+        title: 'Backend Engineering',
+        description:
+          'Writing business-critical services and APIs in Kotlin Springbook.',
+      },
+      {
+        title: 'Performance Optimisation',
+        description:
+          'Building frontend monitoring in New Relic to enable data-driven performance optimisations.',
+      },
+      {
+        title: 'Testing, Testing, Testing',
+        description:
+          'Unit tests with Jest; UI testing with Storybook; End-to-end testing with Playwright.',
+      },
+      {
+        title: 'Problem solving',
+        description:
+          'Part of on-call squad, identifying and providing solutions to customer problems in real time.',
+      },
+      {
+        title: 'Teamwork',
+        description:
+          'Helping out other devs by promoting best practices to ensure maintainability and reduce bugs.',
+      },
+    ],
+  },
+  {
     title: 'Senior Web Developer',
-    period: '2022 – Present',
+    period: '2022 – 2023',
     company: 'The Co-operative Bank',
     location: 'Wellington',
     about: 'Everyday personal banking serving 175k+ customers.',
@@ -38,32 +84,32 @@ export const workHistory: WorkExperience[] = [
       {
         title: 'Software Architecture',
         description:
-          'Leading the rebuild of the Internet Banking platform in React from first principles.',
+          'Led the inception of the Internet Banking rebuild in React from first principles.',
       },
       {
         title: 'Frontend Engineering',
         description:
-          'Building reusable component frameworks to accelerate the development of new features.',
-      },
-      {
-        title: 'Testing, Testing, Testing',
-        description:
-          'Unit testing with Jest; UI testing with Storybook; End-to-end testing with Playwright.',
+          'Built a reusable component framework enabling quick development of new features.',
       },
       {
         title: 'DevOps',
         description:
-          'Writing and maintaining CI/CD pipelines in Azure DevOps and Octopus Deploy.',
+          'Wrote and maintained CI/CD pipelines in Azure DevOps and Octopus Deploy.',
+      },
+      {
+        title: 'Quick learning',
+        description:
+          'Picked up the old codebase for fixing bugs and refactoring in for the migration.',
       },
       {
         title: 'Force multiplying',
         description:
-          'Routinely enabling coworkers to accelerare the output of the entire team.',
+          'Applied general coding skills to help coworkers execute tasks faster.',
       },
       {
-        title: 'Teamwork',
+        title: 'Teambuilding',
         description:
-          'Skilled in agile methodologies and tools. Recruiting and interviewing.',
+          'Helped with recruiting and interviewing candidates for the team.',
       },
     ],
   },
@@ -121,7 +167,7 @@ export const workHistory: WorkExperience[] = [
           'Implemented an efficient user feedback workflow using web annotations.',
       },
       {
-        title: 'Autodidacticism',
+        title: 'Self Learning',
         description:
           'Taught myself modern web development. From HTML and CSS to TypeScript and React. ',
       },
@@ -158,13 +204,13 @@ export const workHistory: WorkExperience[] = [
       },
     ],
   },
-  {
-    title: 'Software Development Intern',
-    period: 'Apr-Jun 2011',
-    company: 'PoP-RN',
-    location: 'Brazil',
-    about: 'Internet Service Provider for Brazilian Universities.',
-    role: 'Developed a Linux script for sending alarm reports to network administrators as mobile text messages.',
-    skills: [],
-  },
+  // {
+  //   title: 'Software Development Intern',
+  //   period: 'Apr-Jun 2011',
+  //   company: 'PoP-RN',
+  //   location: 'Brazil',
+  //   about: 'Internet Service Provider for Brazilian Universities.',
+  //   role: 'Developed a Linux script for sending alarm reports to network administrators as mobile text messages.',
+  //   skills: [],
+  // },
 ];
