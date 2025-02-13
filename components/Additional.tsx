@@ -33,6 +33,6 @@ const additional = [
   },
   {
     title: 'Visa Status (NZ)',
-    description: 'Permanent Resident',
+    description: 'New Zealand Citizen',
   },
 ];
