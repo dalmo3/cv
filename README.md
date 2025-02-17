@@ -12,6 +12,9 @@ Download it [here](https://github.com/dalmo3/cv/raw/main/public/Dalmo-Mendonca-C
 
 # Print from web
 
-- Set scale to 60
 - Disable headers and footers
-- No margins (or customise to add some top margin on page 2+)
+
+(On Chrome you shouldn't need to tinker with scale or margins)
+
+- Set scale to 60
+- No margins

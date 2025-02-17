@@ -5,6 +5,7 @@
 @layer base {
   html {
     /* @apply font-body; */
+    @apply print:text-[62%] print:transform-gpu print:-m-8;
   }
   .column-2 {
     column-count: 2;
