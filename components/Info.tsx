@@ -5,7 +5,7 @@ export const Info: VFC = () => (
     <div className="w-full text-center">
       <h1 className="text-2xl font-bold uppercase">Dalmo Mendonça</h1>
       <h2 className="sr-only">Location</h2>
-      <p>Wellington, NZ</p>
+      <p>Wellington, NZ – NZ Citizen</p>
     </div>
     <div>
       <h2 className="sr-only">Contact Information</h2>
